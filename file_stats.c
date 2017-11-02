@@ -9,7 +9,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-char file_perms_str[10];
+char file_perms_str[10 + 1] = {0};
 
 #define bit(n, i) (((n) >> (i)) & 1)
 
